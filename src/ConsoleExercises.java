@@ -5,7 +5,7 @@ public class ConsoleExercises
     public static void main(String[] args)
     {
 //        double pi = 3.14159;
-//        System.out.printf("The value of pi is approximately %s %n", pi);
+//        System.out.printf("The value of pi is approximately %.2f %n", pi);
 //
         Scanner scanner = new Scanner(System.in);
         scanner.useDelimiter("\n");
@@ -28,7 +28,7 @@ public class ConsoleExercises
         double roomLength = length;
 
         double roomArea = roomLength * roomWidth;
-        double roomPer = roomLength + roomWidth;
+        double roomPer = (roomLength + roomWidth) * 2;
 
         System.out.print("Enter height: ");
         int height = scanner.nextInt();
