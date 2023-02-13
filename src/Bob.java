@@ -19,17 +19,14 @@ public class Bob
             if(userIn.endsWith("?"))
             {
                 System.out.println("Bob: Sure");
-//                scanner.nextLine();
             }
             else if(userIn.endsWith("!"))
             {
                 System.out.println("Bob: Whoa, chill out!");
-//                scanner.nextLine();
             }
             else  if(userIn.isEmpty())
             {
                 System.out.println("Bob: Fine. Be that way!");
-//                scanner.nextLine();
             }
             else if(userIn.equalsIgnoreCase("Goodbye Bob"))
             {
@@ -39,7 +36,6 @@ public class Bob
             else
             {
                 System.out.println("Bob: Whatever");
-//                scanner.nextLine();
 
             }
 
