@@ -4,7 +4,10 @@ public class HighLow
 {
     public static void main(String[] args)
     {
-        int rand = (int)(Math.random() * 100) + 1;
+        int min = 1;
+        int max = 100;
+        int range = max - min + 1;
+        int rand = (int)(Math.random() * range) + min;
 
         System.out.print("Guess a number between 1-100: ");
         Scanner scanner = new Scanner(System.in);
