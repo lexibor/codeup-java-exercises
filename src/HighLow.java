@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class HighLow
@@ -11,10 +10,7 @@ public class HighLow
         Scanner scanner = new Scanner(System.in);
         int userInt = Integer.parseInt(scanner.nextLine());
 
-            System.out.println(highOrLow(userInt, rand));
-
-
-
+        System.out.println(highOrLow(userInt, rand));
 
     }
 
@@ -23,20 +19,25 @@ public class HighLow
     {
         count++;
         Scanner scanner = new Scanner(System.in);
+
             if(num > rand)
             {
                 System.out.println();
+
                 System.out.println("NUMBER OF GUESSES: " + count);
                 System.out.print("LOWER: ");
                 int userInt = Integer.parseInt(scanner.nextLine());
+
                 return highOrLow(userInt, rand);
             }
             else if(num < rand)
             {
                 System.out.println();
+
                 System.out.println("NUMBER OF GUESSES: " + count);
                 System.out.print("HIGHER: ");
                 int userInt = Integer.parseInt(scanner.nextLine());
+
                 return highOrLow(userInt, rand);
             }
             return "GUESSED THE NUMBER!";
