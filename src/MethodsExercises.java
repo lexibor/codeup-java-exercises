@@ -37,10 +37,6 @@ public class MethodsExercises
 //
 //        }
 
-        System.out.print("Guess a number between 1-100: ");
-        int userInt = scanner.nextInt();
-
-        System.out.println(highOrLow(userInt));
 
     }
 
@@ -116,34 +112,6 @@ public class MethodsExercises
         return rand;
     }
 
-    public static String highOrLow(int num)
-    {
-
-        int min = 1;
-        int max = 100;
-        int range = max - min + 1;
-        int rand = (int)(Math.random() * range) + min;
-
-        boolean guessingNum = true;
-        while(guessingNum)
-        {
-            if(num > rand)
-            {
-                System.out.println(rand);
-               return "LOWER: ";
-            }
-            else if(num < rand)
-            {
-                System.out.println(rand);
-                return "HIGHER: ";
-            }
-                guessingNum = false;
-                return "GUESSED THE NUMBER!";
-
-        }
-
-
-    }
 
 
 
