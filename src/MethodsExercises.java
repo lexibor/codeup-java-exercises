@@ -10,7 +10,7 @@ public class MethodsExercises
 //        System.out.println(divide(10, 5));
 //        System.out.println(modulus(9, 3));
 
-//        System.out.println(getInteger(5, 10));
+        System.out.println(getInteger(5, 10));
 
 
         Scanner scanner = new Scanner(System.in);
@@ -74,7 +74,6 @@ public class MethodsExercises
         return num1 % num2;
     }
 
-
     public static int getInteger(int min, int max)
     {
         System.out.printf("Enter a number between %d and %d: ", min, max);
@@ -85,10 +84,9 @@ public class MethodsExercises
 
         if(userIn <= min || userIn >= max)
         {
-            System.out.printf("Bad number, enter a number between %d and %d: ", min, max);
+            System.out.printf("Bad number. ");
             int userInput = getInteger(min, max);
             return userInput;
-
         }
 
         return userIn;
