@@ -17,9 +17,65 @@ public class Dish
 //    3) test the printSummary() method by invoking it and checking if all instance values are correctly printed
 
 
-    public int costInCents;
-    public String nameOfDish;
-    public boolean wouldRecommend;
+    private int costInCents;
+    private String nameOfDish;
+    private boolean wouldRecommend;
+
+
+    ///// GETTERS /////
+    public int getCostInCents()
+    {
+        return costInCents;
+    }
+
+    public String getNameOfDish()
+    {
+        return nameOfDish;
+    }
+
+    public boolean getWouldRecommend()
+    {
+        return wouldRecommend;
+    }
+
+
+    ///// SETTERS //////
+
+
+    public void setCostInCents(int costInCents)
+    {
+        this.costInCents = costInCents;
+    }
+
+    public void setNameOfDish(String nameOfDish)
+    {
+        this.nameOfDish = nameOfDish;
+    }
+
+    public void setWouldRecommend(boolean wouldRecommend)
+    {
+        this.wouldRecommend = wouldRecommend;
+
+    }
+
+
+    /////// CONSTRUCTORS /////
+
+    public Dish(){}
+
+    public Dish(String nameOfDish, int costInCents, boolean wouldRecommend)
+    {
+        this.nameOfDish = nameOfDish;
+        this.costInCents = costInCents;
+        this.wouldRecommend = wouldRecommend;
+    }
+
+
+    public Dish(int costInCents, String nameOfDish, boolean wouldRecommend) {
+        this.costInCents = costInCents;
+        this.nameOfDish = nameOfDish;
+        this.wouldRecommend = wouldRecommend;
+    }
 
     public  void printSummary()
     {

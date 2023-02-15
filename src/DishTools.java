@@ -14,12 +14,12 @@ public class DishTools
 
     public static String shoutDishName(Dish dish)
     {
-        return dish.nameOfDish.toUpperCase();
+        return dish.getNameOfDish().toUpperCase();
     }
 
     public static String analyzeDishCost(Dish dish)
     {
-        if(dish.costInCents > AVERAGE_COST_OF_DISH_IN_CENTS)
+        if(dish.getCostInCents() > AVERAGE_COST_OF_DISH_IN_CENTS)
         {
             return "More expensive than average";
         }
@@ -27,9 +27,9 @@ public class DishTools
 
     }
 
-    public static boolean flipRecommendation(Dish dish)
+    public static void flipRecommendation(Dish dish)
     {
-        return dish.wouldRecommend = !dish.wouldRecommend;
+        dish.setWouldRecommend(!dish.getWouldRecommend());
     }
 
 

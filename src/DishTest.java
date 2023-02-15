@@ -9,22 +9,38 @@ public class DishTest
 
     public static void main(String[] args)
     {
-        Dish dish1 = new Dish();
-        Dish dish2 = new Dish();
+        Dish dish1 = new Dish("Menudo", 1000, true);
+        Dish dish2 = new Dish("Carne Asada", 2000, true);
 
-        dish1.nameOfDish = "Menudo";
-        dish1.costInCents = 1000;
-        dish1.wouldRecommend = true;
 
-        dish2.nameOfDish = "Carne Asada";
-        dish2.costInCents = 2000;
-        dish2.wouldRecommend = true;
+        //// PUBLIC ////
+//        dish1.nameOfDish = "Menudo";
+//        dish1.costInCents = 1000;
+//        dish1.wouldRecommend = true;
+
+        /// PRIVATE ////
+//        dish1.setNameOfDish("Menudo");
+//        dish1.setCostInCents(1000);
+//        dish1.setWouldRecommend(true);
+
+//
+        ////// WHEN PUBLIC //////
+//        dish2.nameOfDish = "Carne Asada";
+//        dish2.costInCents = 2000;
+//        dish2.wouldRecommend = true;
+
+        ////// WHEN PRIVATE /////
+//        dish2.setNameOfDish("Carne Asada");
+//        dish2.setCostInCents(2000);
+//        dish2.setWouldRecommend(true);
+
 
         dish1.printSummary();
 
         System.out.println(DishTools.shoutDishName(dish1));
         System.out.println(DishTools.analyzeDishCost(dish1));
-        System.out.println(DishTools.flipRecommendation(dish1));
+        DishTools.flipRecommendation(dish1);
+        dish1.printSummary();
 
         System.out.println(Dish.moreExpensive(dish1, dish2));
 
