@@ -10,6 +10,8 @@ public class Product
     private String name;
     private int priceInCents;
 
+
+    ///// GETTERS AND SETTERS /////
     public String getName()
     {
         return name;
@@ -30,12 +32,15 @@ public class Product
         this.priceInCents = priceInCents;
     }
 
+
+    //////// CONSTRUCTOR ////////
     public Product(String name, int priceInCents)
     {
         this.name = name;
         this.priceInCents = priceInCents;
     }
 
+    //// STATIC ////
     public static int findAveragePrice(Product[] products)
     {
         int sum = 0;
