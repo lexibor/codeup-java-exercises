@@ -28,7 +28,7 @@ public class Input
     public boolean yesNo()
     {
         System.out.print("Input yes or no (y/n): ");
-        String in = getString();
+        String in = getString().toLowerCase();
 
         if(in.equals("no") || in.equals("n"))
         {
