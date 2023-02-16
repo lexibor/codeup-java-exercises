@@ -10,6 +10,26 @@ public class Product
     private String name;
     private int priceInCents;
 
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public int getPriceInCents()
+    {
+        return priceInCents;
+    }
+
+    public void setPriceInCents(int priceInCents)
+    {
+        this.priceInCents = priceInCents;
+    }
+
     public Product(String name, int priceInCents)
     {
         this.name = name;
@@ -21,7 +41,7 @@ public class Product
         int sum = 0;
         for(Product product : products)
         {
-            sum += product.priceInCents;
+            sum += product.getPriceInCents();
         }
 
         return sum / products.length;
@@ -31,7 +51,7 @@ public class Product
     public static void main(String[] args)
     {
         Product p1 = new Product("Soap", 100);
-        Product p2 = new Product("Apple", 50);
+        Product p2 = new Product("Soup", 50);
         Product p3 = new Product("Shampoo", 150);
 
         Product[] products = {p1, p2, p3};
