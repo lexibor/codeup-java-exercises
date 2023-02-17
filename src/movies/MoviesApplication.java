@@ -49,11 +49,11 @@ public class MoviesApplication
 
             }
 
-            ///// FILTERING AND PRINTING OUT MOVIES /////
-            Movie[] movieSearch = Movie.filterMoviesInCategory(Movie.returnCategory(userInput), movies);
+            ///// FILTERING OUT MOVIES /////
+            Movie[] filteredMoviesArr = Movie.filterMoviesInCategory(Movie.returnCategory(userInput), movies);
 
             /////// PRINT OUT FILTERED MOVIES //////
-            Movie.printMovies(movieSearch);
+            Movie.printMovies(filteredMoviesArr);
 
             System.out.println("""
                     
