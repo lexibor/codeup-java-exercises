@@ -5,11 +5,11 @@ public class ArraysExercises
 //        int[] numbers = {1, 2, 3, 4, 5};
 //        System.out.println(numbers);
 
-        Person p1 = new Person("Alexia");
-        Person p2 = new Person("Emma");
-        Person p3 = new Person("Denise");
+        Person p1 = new Person("Frodo");
+        Person p2 = new Person("Sam");
+        Person p3 = new Person("Merry");
 
-        Person p4 = new Person("Giselle");
+        Person p4 = new Person("Pippin");
 
 
         Person[] people = {p1, p2, p3};
