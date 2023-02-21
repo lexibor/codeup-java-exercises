@@ -1,6 +1,6 @@
 package Media;
 
-abstract class Media
+abstract class Media implements Interactions
 {
     public void read()
     {
