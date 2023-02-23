@@ -37,14 +37,20 @@ public class Input
         return true;
     }
 
-    public int getInt(int min, int max)
-    {
+    public int getInt(int min, int max) {
         System.out.printf("Enter a number between %d and %d: ", min, max);
 
-        int userIn = scanner.nextInt();
-
-        if(userIn <= min || userIn >= max)
+        int userIn = 0;
+        try
         {
+            userIn = Integer.parseInt(getString());
+        }
+        catch (NumberFormatException nfx)
+        {
+            System.out.println(nfx);
+        }
+
+        if (userIn <= min || userIn >= max) {
             System.out.printf("Number not within range. ");
             return getInt(min, max);
         }
@@ -52,14 +58,20 @@ public class Input
         return userIn;
     }
 
-    public double getDouble(double min, double max)
-    {
+    public double getDouble(double min, double max) {
         System.out.printf("Enter a decimal number between %.2f and %.2f: ", min, max);
 
-        double userIn = scanner.nextDouble();
-
-        if(userIn <= min || userIn >= max)
+        double userIn = 0;
+        try
         {
+            userIn = Double.parseDouble(getString());
+        }
+        catch (NumberFormatException nfx)
+        {
+            System.out.println(nfx.getMessage());
+        }
+
+        if (userIn <= min || userIn >= max) {
             System.out.printf("Decimal number not within range. ");
             return getDouble(min, max);
         }
